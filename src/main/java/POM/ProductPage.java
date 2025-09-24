@@ -13,6 +13,9 @@ public class ProductPage {
 
 	@FindBy(linkText="Products")
 	private WebElement product;
+	
+	@FindBy(name="find")
+	private WebElement Find;
 
 
 }
