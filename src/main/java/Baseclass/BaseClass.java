@@ -42,7 +42,7 @@ public class BaseClass {
 		
 	}
 	
-	@Parameters("BROWSER")
+	/*@Parameters("BROWSER")
 	@BeforeClass(groups= {"smokeTest","regressionTest"})
 	public void configBC(String browser) throws Throwable {
 		System.out.println("launch the browser");
@@ -64,9 +64,9 @@ public class BaseClass {
 			driver=new ChromeDriver();
 		}
 		
-	}
+	}*/
 	
-	/*@BeforeClass(groups= {"smokeTest","regressionTest"})
+	@BeforeClass(groups= {"smokeTest","regressionTest"})
 	public void configBC() throws Throwable {
 		System.out.println("launch the browser");
 		String BROWSER = System.getProperty("browser",flib.getDataFromProperties("browser"));
@@ -90,7 +90,7 @@ public class BaseClass {
 		sdriver=driver;
 		UtilityClassObjects.setDriver(driver);
 		
-	}*/
+	}
 	
 	
 		
