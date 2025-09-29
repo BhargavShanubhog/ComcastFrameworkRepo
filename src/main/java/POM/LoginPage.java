@@ -1,6 +1,7 @@
 package POM;
 
 import org.openqa.selenium.WebDriver;
+
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -8,7 +9,7 @@ import org.openqa.selenium.support.PageFactory;
 public class LoginPage {
 	WebDriver driver;
 	//Rule2:-object creation
-	@FindBy(name="user_name")
+	@FindBy(xpath="//input[@name='user_name']")
 	WebElement un;
 	
 	@FindBy(name="user_password")
