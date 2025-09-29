@@ -37,8 +37,8 @@ public class LoginPage {
 	}
 	
 	//Rule5:- object utilisation
-	public void loginToApp(String username, String password) {
-		
+	public void loginToApp(String username, String password) throws InterruptedException {
+		Thread.sleep(2000);
 		un.sendKeys(username);
 		pwd.sendKeys(password);
 		loginBtn.click();
