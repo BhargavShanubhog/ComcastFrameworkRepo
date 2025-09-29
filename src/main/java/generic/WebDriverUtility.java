@@ -13,7 +13,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class WebDriverUtility {
 	public void waitforPageLoad(WebDriver driver) {
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(40));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(100));
 	}
 	
 	public void waitforElementPresent(WebDriver driver,WebElement element) {
