@@ -3,13 +3,14 @@ package ListnerUtility;
 import java.io.File;
 
 
+
 import java.io.IOException;
 import java.util.Date;
 
 import org.apache.maven.surefire.shared.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
-import org.openqa.selenium.support.events.EventFiringWebDriver;
+//import org.openqa.selenium.support.events.EventFiringWebDriver;
 import org.testng.ISuite;
 import org.testng.ISuiteListener;
 import org.testng.ITestContext;
@@ -29,10 +30,11 @@ import generic.UtilityClassObjects;
 public class ListImpClass implements ITestListener, ISuiteListener {
 	public ExtentReports report;
 	public static ExtentTest test;
+	String time=null;
 	@Override
 	public void onStart(ISuite suite) {
 		System.out.println("Report Configuration");
-		String time=new Date().toString().replace(" ", "_").replace(":", "_");
+		 time=new Date().toString().replace(" ", "_").replace(":", "_");
 		ExtentSparkReporter spark=new ExtentSparkReporter("./Advancereport/"+suite.getName()+time+".html");
 		spark.config().setDocumentTitle("CRM Test Suite Results");
 		spark.config().setReportName("CRM Report");
@@ -70,7 +72,7 @@ public class ListImpClass implements ITestListener, ISuiteListener {
 		TakesScreenshot edriver=(TakesScreenshot)UtilityClassObjects.getDriver();
 		
 		String srcfile=edriver.getScreenshotAs(OutputType.BASE64);
-		String time=new Date().toString().replace(" ", "_").replace(":", "_");
+		 time=new Date().toString().replace(" ", "_").replace(":", "_");
 		test.addScreenCaptureFromBase64String(srcfile, testName+"_"+time);
 		test.log(Status.FAIL, result.getMethod().getMethodName()+"==FAILED==");
 		

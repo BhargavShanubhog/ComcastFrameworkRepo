@@ -1,41 +1,204 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="2" total="3" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="12" passed="12" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-09-19T17:36:45 IST" name="Default suite" finished-at="2025-09-19T17:37:15 IST" duration-ms="30767">
+  <suite started-at="2025-09-24T15:59:27 IST" name="Suite" finished-at="2025-09-24T16:03:05 IST" duration-ms="217660">
     <groups>
+      <group name="regressionTest">
+        <method signature="CreateContactTest.CreateContactWithDate()[pri:0, instance:ExtentReport.CreateContactTest@394df057]" name="CreateContactWithDate" class="ExtentReport.CreateContactTest"/>
+        <method signature="CreateContactTest.CreateContactWithOrgTest()[pri:0, instance:ExtentReport.CreateContactTest@394df057]" name="CreateContactWithOrgTest" class="ExtentReport.CreateContactTest"/>
+        <method signature="CreateOrgTest.CreateOrgWithIndustry()[pri:0, instance:ExtentReport.CreateOrgTest@5fbe4146]" name="CreateOrgWithIndustry" class="ExtentReport.CreateOrgTest"/>
+        <method signature="CreateOrgTest.DeleteOrgTest()[pri:0, instance:ExtentReport.CreateOrgTest@5fbe4146]" name="DeleteOrgTest" class="ExtentReport.CreateOrgTest"/>
+        <method signature="CreateOrgTest.OrgWithPhoneNo()[pri:0, instance:ExtentReport.CreateOrgTest@5fbe4146]" name="OrgWithPhoneNo" class="ExtentReport.CreateOrgTest"/>
+      </group> <!-- regressionTest -->
+      <group name="smokeTest">
+        <method signature="CreateContactTest.createContact()[pri:0, instance:ExtentReport.CreateContactTest@394df057]" name="createContact" class="ExtentReport.CreateContactTest"/>
+        <method signature="CreateOrgTest.createOrganization()[pri:0, instance:ExtentReport.CreateOrgTest@5fbe4146]" name="createOrganization" class="ExtentReport.CreateOrgTest"/>
+      </group> <!-- smokeTest -->
     </groups>
-    <test started-at="2025-09-19T17:36:45 IST" name="Default test" finished-at="2025-09-19T17:37:15 IST" duration-ms="30767">
-      <class name="ConfigAnnotation.CreateContactTest">
-        <test-method is-config="true" signature="configBS()[pri:0, instance:ConfigAnnotation.CreateContactTest@445b295b]" started-at="2025-09-19T17:36:45 IST" name="configBS" finished-at="2025-09-19T17:36:45 IST" duration-ms="34" status="PASS">
+    <test started-at="2025-09-24T15:59:27 IST" name="Test" finished-at="2025-09-24T16:03:05 IST" duration-ms="217660">
+      <class name="ExtentReport.CreateOrgTest">
+        <test-method is-config="true" signature="configBS()[pri:0, instance:ExtentReport.CreateOrgTest@5fbe4146]" started-at="2025-09-24T15:59:27 IST" name="configBS" finished-at="2025-09-24T15:59:27 IST" duration-ms="17" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBS -->
-        <test-method is-config="true" signature="configBC()[pri:0, instance:ConfigAnnotation.CreateContactTest@445b295b]" started-at="2025-09-19T17:36:45 IST" name="configBC" finished-at="2025-09-19T17:36:48 IST" duration-ms="3874" status="PASS">
+        <test-method is-config="true" signature="configBC()[pri:0, instance:ExtentReport.CreateOrgTest@5fbe4146]" started-at="2025-09-24T15:59:27 IST" name="configBC" finished-at="2025-09-24T15:59:30 IST" duration-ms="2705" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBC -->
-        <test-method is-config="true" signature="configBM()[pri:0, instance:ConfigAnnotation.CreateContactTest@445b295b]" started-at="2025-09-19T17:36:49 IST" name="configBM" finished-at="2025-09-19T17:37:03 IST" duration-ms="14150" status="PASS">
+        <test-method is-config="true" signature="configBM()[pri:0, instance:ExtentReport.CreateOrgTest@5fbe4146]" started-at="2025-09-24T15:59:30 IST" name="configBM" finished-at="2025-09-24T15:59:37 IST" duration-ms="7281" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBM -->
-        <test-method signature="createContact()[pri:0, instance:ConfigAnnotation.CreateContactTest@445b295b]" started-at="2025-09-19T17:37:03 IST" name="createContact" finished-at="2025-09-19T17:37:14 IST" duration-ms="10967" status="PASS">
+        <test-method signature="CreateOrgWithIndustry()[pri:0, instance:ExtentReport.CreateOrgTest@5fbe4146]" started-at="2025-09-24T15:59:37 IST" name="CreateOrgWithIndustry" finished-at="2025-09-24T15:59:47 IST" duration-ms="9932" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- createContact -->
-        <test-method is-config="true" signature="configAM()[pri:0, instance:ConfigAnnotation.CreateContactTest@445b295b]" started-at="2025-09-19T17:37:14 IST" name="configAM" finished-at="2025-09-19T17:37:15 IST" duration-ms="1318" status="PASS">
+        </test-method> <!-- CreateOrgWithIndustry -->
+        <test-method is-config="true" signature="configAM()[pri:0, instance:ExtentReport.CreateOrgTest@5fbe4146]" started-at="2025-09-24T15:59:47 IST" name="configAM" finished-at="2025-09-24T15:59:49 IST" duration-ms="1186" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configAM -->
-        <test-method is-config="true" signature="configAC()[pri:0, instance:ConfigAnnotation.CreateContactTest@445b295b]" started-at="2025-09-19T17:37:15 IST" name="configAC" finished-at="2025-09-19T17:37:15 IST" duration-ms="346" status="PASS">
+        <test-method is-config="true" signature="configBM()[pri:0, instance:ExtentReport.CreateOrgTest@5fbe4146]" started-at="2025-09-24T15:59:49 IST" name="configBM" finished-at="2025-09-24T15:59:52 IST" duration-ms="3012" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBM -->
+        <test-method signature="DeleteOrgTest()[pri:0, instance:ExtentReport.CreateOrgTest@5fbe4146]" started-at="2025-09-24T15:59:52 IST" name="DeleteOrgTest" finished-at="2025-09-24T16:00:02 IST" duration-ms="10852" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DeleteOrgTest -->
+        <test-method is-config="true" signature="configAM()[pri:0, instance:ExtentReport.CreateOrgTest@5fbe4146]" started-at="2025-09-24T16:00:02 IST" name="configAM" finished-at="2025-09-24T16:00:06 IST" duration-ms="3124" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAM -->
+        <test-method is-config="true" signature="configBM()[pri:0, instance:ExtentReport.CreateOrgTest@5fbe4146]" started-at="2025-09-24T16:00:06 IST" name="configBM" finished-at="2025-09-24T16:00:10 IST" duration-ms="4017" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBM -->
+        <test-method signature="OrgWithPhoneNo()[pri:0, instance:ExtentReport.CreateOrgTest@5fbe4146]" started-at="2025-09-24T16:00:10 IST" name="OrgWithPhoneNo" finished-at="2025-09-24T16:00:21 IST" duration-ms="11864" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OrgWithPhoneNo -->
+        <test-method is-config="true" signature="configAM()[pri:0, instance:ExtentReport.CreateOrgTest@5fbe4146]" started-at="2025-09-24T16:00:22 IST" name="configAM" finished-at="2025-09-24T16:00:23 IST" duration-ms="1160" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAM -->
+        <test-method is-config="true" signature="configBM()[pri:0, instance:ExtentReport.CreateOrgTest@5fbe4146]" started-at="2025-09-24T16:00:23 IST" name="configBM" finished-at="2025-09-24T16:00:27 IST" duration-ms="4087" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBM -->
+        <test-method signature="createOrganization()[pri:0, instance:ExtentReport.CreateOrgTest@5fbe4146]" started-at="2025-09-24T16:00:27 IST" name="createOrganization" finished-at="2025-09-24T16:00:35 IST" duration-ms="7916" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createOrganization -->
+        <test-method is-config="true" signature="configAM()[pri:0, instance:ExtentReport.CreateOrgTest@5fbe4146]" started-at="2025-09-24T16:00:35 IST" name="configAM" finished-at="2025-09-24T16:00:36 IST" duration-ms="1323" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAM -->
+        <test-method is-config="true" signature="configAC()[pri:0, instance:ExtentReport.CreateOrgTest@5fbe4146]" started-at="2025-09-24T16:00:36 IST" name="configAC" finished-at="2025-09-24T16:00:36 IST" duration-ms="347" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configAC -->
-        <test-method is-config="true" signature="configAS()[pri:0, instance:ConfigAnnotation.CreateContactTest@445b295b]" started-at="2025-09-19T17:37:15 IST" name="configAS" finished-at="2025-09-19T17:37:15 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="configAS()[pri:0, instance:ExtentReport.CreateOrgTest@5fbe4146]" started-at="2025-09-24T16:03:05 IST" name="configAS" finished-at="2025-09-24T16:03:05 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configAS -->
-      </class> <!-- ConfigAnnotation.CreateContactTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- ExtentReport.CreateOrgTest -->
+      <class name="ExtentReport.CreateProductAndTroubleTicket">
+        <test-method is-config="true" signature="configBC()[pri:0, instance:ExtentReport.CreateProductAndTroubleTicket@4961f6af]" started-at="2025-09-24T16:01:41 IST" name="configBC" finished-at="2025-09-24T16:01:44 IST" duration-ms="2412" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBC -->
+        <test-method is-config="true" signature="configBM()[pri:0, instance:ExtentReport.CreateProductAndTroubleTicket@4961f6af]" started-at="2025-09-24T16:01:44 IST" name="configBM" finished-at="2025-09-24T16:01:49 IST" duration-ms="5876" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBM -->
+        <test-method signature="CreateProductAndTroubleTickettest()[pri:0, instance:ExtentReport.CreateProductAndTroubleTicket@4961f6af]" started-at="2025-09-24T16:01:49 IST" name="CreateProductAndTroubleTickettest" finished-at="2025-09-24T16:02:10 IST" duration-ms="20232" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateProductAndTroubleTickettest -->
+        <test-method is-config="true" signature="configAM()[pri:0, instance:ExtentReport.CreateProductAndTroubleTicket@4961f6af]" started-at="2025-09-24T16:02:10 IST" name="configAM" finished-at="2025-09-24T16:02:11 IST" duration-ms="1199" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAM -->
+        <test-method is-config="true" signature="configBM()[pri:0, instance:ExtentReport.CreateProductAndTroubleTicket@4961f6af]" started-at="2025-09-24T16:02:11 IST" name="configBM" finished-at="2025-09-24T16:02:15 IST" duration-ms="3739" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBM -->
+        <test-method signature="CreateProductSalesAndSupport()[pri:0, instance:ExtentReport.CreateProductAndTroubleTicket@4961f6af]" started-at="2025-09-24T16:02:15 IST" name="CreateProductSalesAndSupport" finished-at="2025-09-24T16:02:23 IST" duration-ms="7974" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateProductSalesAndSupport -->
+        <test-method is-config="true" signature="configAM()[pri:0, instance:ExtentReport.CreateProductAndTroubleTicket@4961f6af]" started-at="2025-09-24T16:02:23 IST" name="configAM" finished-at="2025-09-24T16:02:24 IST" duration-ms="1198" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAM -->
+        <test-method is-config="true" signature="configBM()[pri:0, instance:ExtentReport.CreateProductAndTroubleTicket@4961f6af]" started-at="2025-09-24T16:02:24 IST" name="configBM" finished-at="2025-09-24T16:02:28 IST" duration-ms="3920" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBM -->
+        <test-method signature="CreateProductSalesDate()[pri:0, instance:ExtentReport.CreateProductAndTroubleTicket@4961f6af]" started-at="2025-09-24T16:02:28 IST" name="CreateProductSalesDate" finished-at="2025-09-24T16:02:35 IST" duration-ms="7536" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateProductSalesDate -->
+        <test-method is-config="true" signature="configAM()[pri:0, instance:ExtentReport.CreateProductAndTroubleTicket@4961f6af]" started-at="2025-09-24T16:02:35 IST" name="configAM" finished-at="2025-09-24T16:02:36 IST" duration-ms="1252" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAM -->
+        <test-method is-config="true" signature="configBM()[pri:0, instance:ExtentReport.CreateProductAndTroubleTicket@4961f6af]" started-at="2025-09-24T16:02:36 IST" name="configBM" finished-at="2025-09-24T16:02:40 IST" duration-ms="3925" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBM -->
+        <test-method signature="CreateProductTest()[pri:0, instance:ExtentReport.CreateProductAndTroubleTicket@4961f6af]" started-at="2025-09-24T16:02:40 IST" name="CreateProductTest" finished-at="2025-09-24T16:02:49 IST" duration-ms="8295" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateProductTest -->
+        <test-method is-config="true" signature="configAM()[pri:0, instance:ExtentReport.CreateProductAndTroubleTicket@4961f6af]" started-at="2025-09-24T16:02:49 IST" name="configAM" finished-at="2025-09-24T16:02:50 IST" duration-ms="1081" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAM -->
+        <test-method is-config="true" signature="configBM()[pri:0, instance:ExtentReport.CreateProductAndTroubleTicket@4961f6af]" started-at="2025-09-24T16:02:50 IST" name="configBM" finished-at="2025-09-24T16:02:53 IST" duration-ms="3037" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBM -->
+        <test-method signature="CreateTroubleTicketTest()[pri:0, instance:ExtentReport.CreateProductAndTroubleTicket@4961f6af]" started-at="2025-09-24T16:02:53 IST" name="CreateTroubleTicketTest" finished-at="2025-09-24T16:03:02 IST" duration-ms="9131" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateTroubleTicketTest -->
+        <test-method is-config="true" signature="configAM()[pri:0, instance:ExtentReport.CreateProductAndTroubleTicket@4961f6af]" started-at="2025-09-24T16:03:02 IST" name="configAM" finished-at="2025-09-24T16:03:05 IST" duration-ms="2833" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAM -->
+        <test-method is-config="true" signature="configAC()[pri:0, instance:ExtentReport.CreateProductAndTroubleTicket@4961f6af]" started-at="2025-09-24T16:03:05 IST" name="configAC" finished-at="2025-09-24T16:03:05 IST" duration-ms="330" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAC -->
+      </class> <!-- ExtentReport.CreateProductAndTroubleTicket -->
+      <class name="ExtentReport.CreateContactTest">
+        <test-method is-config="true" signature="configBC()[pri:0, instance:ExtentReport.CreateContactTest@394df057]" started-at="2025-09-24T16:00:36 IST" name="configBC" finished-at="2025-09-24T16:00:38 IST" duration-ms="1988" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBC -->
+        <test-method is-config="true" signature="configBM()[pri:0, instance:ExtentReport.CreateContactTest@394df057]" started-at="2025-09-24T16:00:38 IST" name="configBM" finished-at="2025-09-24T16:00:43 IST" duration-ms="5136" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBM -->
+        <test-method signature="CreateContactWithDate()[pri:0, instance:ExtentReport.CreateContactTest@394df057]" started-at="2025-09-24T16:00:43 IST" name="CreateContactWithDate" finished-at="2025-09-24T16:00:52 IST" duration-ms="8115" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateContactWithDate -->
+        <test-method is-config="true" signature="configAM()[pri:0, instance:ExtentReport.CreateContactTest@394df057]" started-at="2025-09-24T16:00:52 IST" name="configAM" finished-at="2025-09-24T16:00:53 IST" duration-ms="1266" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAM -->
+        <test-method is-config="true" signature="configBM()[pri:0, instance:ExtentReport.CreateContactTest@394df057]" started-at="2025-09-24T16:00:53 IST" name="configBM" finished-at="2025-09-24T16:00:57 IST" duration-ms="3845" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBM -->
+        <test-method signature="CreateContactWithOrgTest()[pri:0, instance:ExtentReport.CreateContactTest@394df057]" started-at="2025-09-24T16:00:57 IST" name="CreateContactWithOrgTest" finished-at="2025-09-24T16:01:26 IST" duration-ms="29434" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateContactWithOrgTest -->
+        <test-method is-config="true" signature="configAM()[pri:0, instance:ExtentReport.CreateContactTest@394df057]" started-at="2025-09-24T16:01:26 IST" name="configAM" finished-at="2025-09-24T16:01:27 IST" duration-ms="1234" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAM -->
+        <test-method is-config="true" signature="configBM()[pri:0, instance:ExtentReport.CreateContactTest@394df057]" started-at="2025-09-24T16:01:27 IST" name="configBM" finished-at="2025-09-24T16:01:31 IST" duration-ms="3697" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBM -->
+        <test-method signature="createContact()[pri:0, instance:ExtentReport.CreateContactTest@394df057]" started-at="2025-09-24T16:01:31 IST" name="createContact" finished-at="2025-09-24T16:01:40 IST" duration-ms="8461" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createContact -->
+        <test-method is-config="true" signature="configAM()[pri:0, instance:ExtentReport.CreateContactTest@394df057]" started-at="2025-09-24T16:01:40 IST" name="configAM" finished-at="2025-09-24T16:01:41 IST" duration-ms="1219" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAM -->
+        <test-method is-config="true" signature="configAC()[pri:0, instance:ExtentReport.CreateContactTest@394df057]" started-at="2025-09-24T16:01:41 IST" name="configAC" finished-at="2025-09-24T16:01:41 IST" duration-ms="344" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAC -->
+      </class> <!-- ExtentReport.CreateContactTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

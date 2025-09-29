@@ -42,7 +42,7 @@ public class BaseClass {
 		
 	}
 	
-	/*@Parameters("BROWSER")
+	@Parameters("BROWSER")
 	@BeforeClass(groups= {"smokeTest","regressionTest"})
 	public void configBC(String browser) throws Throwable {
 		System.out.println("launch the browser");
@@ -64,12 +64,12 @@ public class BaseClass {
 			driver=new ChromeDriver();
 		}
 		
-	}*/
+	}
 	
-	@BeforeClass(groups= {"smokeTest","regressionTest"})
+	/*@BeforeClass(groups= {"smokeTest","regressionTest"})
 	public void configBC() throws Throwable {
 		System.out.println("launch the browser");
-		String BROWSER = flib.getDataFromProperties("browser");
+		String BROWSER = System.getProperty("browser",flib.getDataFromProperties("browser"));
 		
 		if(BROWSER.equalsIgnoreCase("chrome"))
 		{
@@ -90,7 +90,7 @@ public class BaseClass {
 		sdriver=driver;
 		UtilityClassObjects.setDriver(driver);
 		
-	}
+	}*/
 	
 	
 		
@@ -102,9 +102,9 @@ public class BaseClass {
 	@BeforeMethod(groups= {"smokeTest","regressionTest"})
 	public void configBM() throws Throwable {
 		System.out.println("Login");
-		String URL = flib.getDataFromProperties("url");
-		String USERNAME = flib.getDataFromProperties("username");
-		String PASSWORD = flib.getDataFromProperties("password");
+		String URL = System.getProperty("url",flib.getDataFromProperties("url"));
+		String USERNAME = System.getProperty("username",flib.getDataFromProperties("username"));
+		String PASSWORD = System.getProperty("password",flib.getDataFromProperties("password"));
          driver.get(URL);
 		
 		driver.manage().window().maximize();

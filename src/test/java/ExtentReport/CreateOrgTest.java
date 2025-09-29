@@ -1,6 +1,7 @@
 package ExtentReport;
 
 import org.openqa.selenium.Alert;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.Test;
@@ -19,6 +20,7 @@ public class CreateOrgTest extends BaseClass {
 	
 	@Test(groups="smokeTest")
 	public void createOrganization() throws Throwable {
+
 		UtilityClassObjects.getTest().log(Status.INFO, "read data from excel");
 		Homepage l2=new Homepage(driver);
 		l2.getOrgLink().click();
